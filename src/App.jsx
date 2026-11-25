@@ -112,10 +112,10 @@ function App() {
 
       <footer className="site-footer">
         <AdSpace width={970} height={250}>
-           <ins className="adsbyadgeist"
-        style={{ display: 'inline-block', width: 300, height: 250, fontFamily: 'Arial', color: '#63aa75' }}
-        data-ad-slot="6b067bec94327a87b5899779"
-      />
+        <ins className="adsbyadgeist"
+  style={{ display: 'inline-block', width: 970, height: 250, fontFamily: 'Arial', color: '#63aa75' }}
+  data-ad-slot="6b068d149bec7890d1bfad73"
+/>
         </AdSpace>
         <small>Text is available under an open licence. Openpedia is a test site.</small>
       </footer>
