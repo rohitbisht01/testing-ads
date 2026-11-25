@@ -1,5 +1,4 @@
 export const ARTICLE = {
-  id: 'honey-bee',
   title: 'Honey bee',
   summary:
     'are eusocial flying insects known for building colonies with wax combs, producing honey and pollinating flowering plants. Of the many bee species worldwide, only a handful are true honey bees, and the western honey bee is the most widely kept for agriculture.',

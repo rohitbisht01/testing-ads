@@ -1,8 +1,5 @@
-import { useState } from 'react'
 import './App.css'
-import { trackEvent } from './analytics.js'
 import { ARTICLE } from './article.js'
-import { useArticleTracking } from './useArticleTracking.js'
 
 const NAV_LINKS = ['Main page', 'Contents', 'Current events', 'Random article', 'About', 'Contact us']
 
@@ -15,20 +12,6 @@ function AdSpace({ width, height, children }) {
 }
 
 function App() {
-  const articleEndRef = useArticleTracking(ARTICLE)
-  const [query, setQuery] = useState('')
-
-  const handleSearch = (event) => {
-    event.preventDefault()
-    const value = query.trim()
-    if (!value) return
-    trackEvent('search', { query: value, articleId: ARTICLE.id })
-  }
-
-  const handleTocClick = (section) => {
-    trackEvent('toc_click', { articleId: ARTICLE.id, section })
-  }
-
   return (
     <div className="page">
       <header className="site-header">
@@ -36,15 +19,7 @@ function App() {
           <span className="brand-name">Openpedia</span>
           <span className="brand-tagline">The Free Encyclopedia</span>
         </div>
-        <form onSubmit={handleSearch}>
-          <input
-            className="search"
-            type="search"
-            placeholder="Search Openpedia"
-            value={query}
-            onChange={(event) => setQuery(event.target.value)}
-          />
-        </form>
+        <input className="search" type="search" placeholder="Search Openpedia" />
       </header>
 
       <div className="header-ad">
@@ -111,15 +86,11 @@ function App() {
             <ol>
               {ARTICLE.sections.map((section) => (
                 <li key={section.id}>
-                  <a href={`#${section.id}`} onClick={() => handleTocClick(section.id)}>
-                    {section.heading}
-                  </a>
+                  <a href={`#${section.id}`}>{section.heading}</a>
                 </li>
               ))}
               <li>
-                <a href="#references" onClick={() => handleTocClick('references')}>
-                  References
-                </a>
+                <a href="#references">References</a>
               </li>
             </ol>
           </div>
@@ -141,11 +112,11 @@ function App() {
               ))}
             </ol>
           </section>
-          <div ref={articleEndRef} />
         </main>
 
         <aside className="sidebar">
           <AdSpace width={300} height={250} />
+          
           <AdSpace width={300} height={600} />  
         </aside>
       </div>
