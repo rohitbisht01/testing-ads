@@ -121,10 +121,10 @@ function App() {
         <small>Text is available under an open licence. Openpedia is a test site.</small>
       </footer>
 
-      {/* <ins className="adsbyadgeist"
+      <ins className="adsbyadgeist"
         style={{ display: 'inline-block', width: 300, height: 250, fontFamily: 'Arial', color: '#63aa75' }}
         data-ad-slot="6b067bec94327a87b5899779"
-      /> */}
+      />
     </div>
   )
 }
