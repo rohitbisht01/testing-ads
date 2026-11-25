@@ -41,13 +41,13 @@ function App() {
               </a>
             ))}
           </nav>
-          {/* <AdSpace width={160} height={600} /> */}
+         
           <ins className="adsbyadgeist"
   style={{ display: 'inline-block', width: 300, height: 600, fontFamily: 'Arial', color: '#63aa75' }}
   data-ad-slot="6b0696a29bec7890d1bfba49"
 />
-         
         </aside>
+        
 
         <main className="content">
           <div className="tabs">
