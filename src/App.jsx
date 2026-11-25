@@ -23,7 +23,11 @@ function App() {
       </header>
 
       <div className="header-ad">
-        <AdSpace width={728} height={90} />
+        {/* <AdSpace width={728} height={90} /> */}
+        <ins className="adsbyadgeist"
+  style={{ display: 'inline-block', width: 300, height: 250, fontFamily: 'Arial', color: '#63aa75' }}
+  data-ad-slot="6b067bec94327a87b5899779"
+/>
       </div>
 
       <div className="layout">
