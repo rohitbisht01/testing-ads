@@ -28,6 +28,7 @@ function App() {
   style={{ display: 'inline-block', width: 300, height: 250, fontFamily: 'Arial', color: '#63aa75' }}
   data-ad-slot="6b067bec94327a87b5899779"
 />
+ 
       </div>
 
       <div className="layout">
@@ -40,7 +41,12 @@ function App() {
               </a>
             ))}
           </nav>
-          <AdSpace width={160} height={600} />
+          {/* <AdSpace width={160} height={600} /> */}
+          <ins className="adsbyadgeist"
+  style={{ display: 'inline-block', width: 300, height: 600, fontFamily: 'Arial', color: '#63aa75' }}
+  data-ad-slot="6b0696a29bec7890d1bfba49"
+/>
+         
         </aside>
 
         <main className="content">
@@ -110,7 +116,8 @@ function App() {
 
         <aside className="sidebar">
           <AdSpace width={300} height={250} />
-          <AdSpace width={300} height={600} />
+          
+          <AdSpace width={300} height={600} />  
         </aside>
       </div>
 
