@@ -1,0 +1,223 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #202122;
+  background: #f6f6f6;
+}
+
+a {
+  color: #0645ad;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.page {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 12px 16px;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #a2a9b1;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-name {
+  font-family: 'Linux Libertine', Georgia, serif;
+  font-size: 24px;
+}
+
+.brand-tagline {
+  font-size: 12px;
+  color: #54595d;
+}
+
+.search {
+  width: 360px;
+  max-width: 100%;
+  padding: 6px 8px;
+  border: 1px solid #a2a9b1;
+  border-radius: 2px;
+}
+
+.header-ad {
+  display: flex;
+  justify-content: center;
+  margin: 12px 0;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 170px 1fr 320px;
+  gap: 20px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.side-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+}
+
+.side-nav h3 {
+  margin: 0 0 4px;
+  font-size: 12px;
+  font-weight: normal;
+  color: #54595d;
+  border-bottom: 1px solid #c8ccd1;
+  padding-bottom: 4px;
+}
+
+.content {
+  background: #fff;
+  border: 1px solid #a7d7f9;
+  padding: 16px 24px;
+  line-height: 1.6;
+  min-width: 0;
+}
+
+.tabs {
+  display: flex;
+  gap: 4px;
+  border-bottom: 1px solid #a7d7f9;
+  margin: -16px -24px 12px;
+  padding: 0 24px;
+  font-size: 13px;
+}
+
+.tab {
+  padding: 8px 10px;
+  color: #0645ad;
+}
+
+.tab.active {
+  color: #202122;
+  border-bottom: 2px solid #202122;
+}
+
+.tab-spacer {
+  flex: 1;
+}
+
+.article-title {
+  font-family: 'Linux Libertine', Georgia, serif;
+  font-weight: normal;
+  font-size: 28px;
+  margin: 0;
+  border-bottom: 1px solid #a2a9b1;
+}
+
+.from-line {
+  font-size: 12px;
+  color: #54595d;
+  margin-top: 4px;
+}
+
+.infobox {
+  float: right;
+  width: 260px;
+  margin: 0 0 12px 16px;
+  border: 1px solid #a2a9b1;
+  background: #f8f9fa;
+  font-size: 13px;
+  border-collapse: collapse;
+}
+
+.infobox caption {
+  font-weight: bold;
+  font-size: 16px;
+  padding: 6px;
+}
+
+.infobox th,
+.infobox td {
+  text-align: left;
+  padding: 4px 8px;
+  vertical-align: top;
+}
+
+.infobox-section {
+  text-align: center !important;
+  background: #d3eedf;
+}
+
+.toc {
+  display: inline-block;
+  background: #f8f9fa;
+  border: 1px solid #a2a9b1;
+  padding: 8px 16px;
+  margin: 8px 0;
+}
+
+.toc ol {
+  margin: 6px 0 0;
+  padding-left: 20px;
+}
+
+.content h2 {
+  font-family: 'Linux Libertine', Georgia, serif;
+  font-weight: normal;
+  font-size: 22px;
+  border-bottom: 1px solid #a2a9b1;
+  margin: 20px 0 8px;
+  clear: none;
+}
+
+.references {
+  font-size: 13px;
+}
+
+.site-footer {
+  margin-top: 20px;
+  padding-top: 12px;
+  border-top: 1px solid #a2a9b1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  color: #54595d;
+}
+
+.ad-space {
+  border: 2px dotted #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-size: 12px;
+  max-width: 100%;
+}
+
+@media (max-width: 1000px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .infobox {
+    float: none;
+    margin: 0 0 12px;
+  }
+}
