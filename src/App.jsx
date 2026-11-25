@@ -111,12 +111,12 @@ function App() {
       </div>
 
       <footer className="site-footer">
-        <AdSpace width={970} height={250}>
+        {/* <AdSpace width={970} height={250}> */}
         <ins className="adsbyadgeist"
   style={{ display: 'inline-block', width: 970, height: 250, fontFamily: 'Arial', color: '#63aa75' }}
   data-ad-slot="6b068d149bec7890d1bfad73"
 />
-        </AdSpace>
+        {/* </AdSpace> */}
         <small>Text is available under an open licence. Openpedia is a test site.</small>
       </footer>
 
