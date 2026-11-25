@@ -12,7 +12,7 @@ function App() {
   data-ad-slot="6b068d149bec7890d1bfad73"
 /> */}
 
-<br />
+{/* <br />
 <br />
 <br />
 <br />
@@ -21,7 +21,7 @@ function App() {
 <ins class="adsbyadgeist"
     style="display:inline-block;width:970px;height:250px;font-family:Arial;color:#63aa75"
     data-ad-slot="6b068d149bec7890d1bfad73">
-</ins>
+</ins> */}
     </div>
   )
 }
